@@ -9,7 +9,7 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  let localArr = [];
+  const localArr = [];
   arr.forEach( value => localArr.push(value + 1));
   return localArr;
 };
@@ -23,7 +23,7 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  let localArr = [];
+  const localArr = [];
   arr.forEach( value => localArr.push(`${value}!`));
   return localArr;
 };
@@ -37,7 +37,7 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  let localArr = [];
+  const localArr = [];
   arr.forEach( value => localArr.push(value.toUpperCase()));
   return localArr;
 };
@@ -55,7 +55,7 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 const greeting = word => `${word.toUpperCase()}!`;
 
 const speaker = (words, callback) => {
-  let localArr = [];
+  const localArr = [];
   words.forEach( value => localArr.push(callback(value)));
   return localArr;
 };
@@ -105,7 +105,7 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = availableItems => {
-  let itemList = [];
+  const itemList = [];
   availableItems.forEach( item => {
     if(item.available === true){
       itemList.push(item.name);
@@ -129,7 +129,7 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  let fbArr = [];
+  const fbArr = [];
   arr.forEach( value => {
     if(value % 15 === 0){
       fbArr.push('Fizz Buzz');
