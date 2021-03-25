@@ -64,10 +64,11 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  const newArr = str.split(' ').filter(word => /^[A-Z]/.test(word));
-  const capArr = newArr.map(word => word.replace(/\W/g, ''));
+  const strArr = str.split(' ').filter(word => /^[A-Z]/.test(word));
+  const capArr = strArr.map(word => word.replace(/\W/g, ''));
   return capArr;
 };
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
