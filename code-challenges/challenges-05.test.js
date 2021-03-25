@@ -121,7 +121,7 @@ const gruffaloCrumble = {
 };
 
 
-const listFoods = (recipe) => recipe.ingredients.map(item => item.split(' ').slice(2).join(' '));
+const listFoods = (recipe) => recipe.ingredients.map( item => item.split(' ').slice(2).join(' '));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
