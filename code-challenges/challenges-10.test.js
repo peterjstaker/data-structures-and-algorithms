@@ -5,13 +5,13 @@ CHALLENGE 1 - Review
 
 Write a function named getNames that, given an array of people objects, uses map to return an array of names reversed.
 
-For example: 
+For example:
 [
 {
   name: 'lloyd',
   age: 32,
   shoeSize: 12
-}, 
+},
 {
   name: 'jamie',
   age: 21,
