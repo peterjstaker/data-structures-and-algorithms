@@ -1,15 +1,11 @@
 # Data Structures and Algorithms
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+## 401 Data Structures, Code Challenges
 
-## Repository Quick Tour and Usage
+### Shift Array
 
-### 301 Code Challenges
+View Solution: [code](./javascript/arrayShift/array-shift.js)
 
-Under the `data-structures-and-algorithms` repository, at the top level is a folder called `code-challenges`
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
-
-### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+![Array Shift](./assets/array-shift.jpg)
