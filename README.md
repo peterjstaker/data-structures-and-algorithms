@@ -2,4 +2,8 @@
 
 ## 401 Data Structures - Table of Contents
 
-1. [Array Shift](./javascript/arrayShift/README.md)
+### Arrays
+
+1. [Array Shift](./javascript/arrays/arrayShift/README.md)
+
+1. [Array Binary Search](./javascript/arrays/arrayBinarySearch/README.md)
