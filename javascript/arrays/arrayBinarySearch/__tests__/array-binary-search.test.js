@@ -17,9 +17,15 @@ describe('***ARRAY BINARY SEARCH***', () => {
   });
 
   it('should return 0 index if search key is at the beginning of array', () => {
-    const oddArray = [1, 3, 4];
+    const sortedArray = [1, 3, 4];
     const val = 1;
-    expect(arrayBinarySearch(oddArray, val)).toEqual(0);
+    expect(arrayBinarySearch(sortedArray, val)).toEqual(0);
+  });
+
+  it('should return -1 if search key is not in array', () => {
+    const sortedArray = [1, 3, 4];
+    const val = 7;
+    expect(arrayBinarySearch(sortedArray, val)).toEqual(-1);
   });
 
 });
