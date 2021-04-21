@@ -21,5 +21,5 @@ describe('***ARRAY SHIFT***', () => {
     const val = 2;
     expect(insertShiftArray(oddArray, val)).toEqual([1, 2, 3, 4]);
   });
-  
+
 });
