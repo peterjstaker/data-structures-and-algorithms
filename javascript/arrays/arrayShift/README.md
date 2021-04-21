@@ -1,6 +1,6 @@
 # Challenge Summary - Array Shift
 
-[<--- Back to Table of Contents](../../README.md)
+[<--- Back to Table of Contents](../../../README.md)
 
 ## Challenge Description
 
@@ -16,4 +16,4 @@ View Solution: [code](./array-shift.js)
 
 Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
-![Array Shift](../../assets/array-shift.jpg)
+![Array Shift](../../../assets/array-shift.jpg)
