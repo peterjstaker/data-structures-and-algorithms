@@ -15,3 +15,11 @@ console.log('linked list', ll);
 ll.insert(3);
 
 console.log('linked list', ll);
+
+ll.insertBefore(10, 13);
+
+console.log('linked list', ll);
+
+ll.insertAfter(3, 72);
+
+console.log('linkedlist', ll);
