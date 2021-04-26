@@ -34,4 +34,4 @@ I started out by whiteboarding the problem domain and then planned each step of 
 
 View Solution: [code](./linked-list.js)
 
-![Linked List Insertions](../../../assets/linked-list-insertions.jpg)
+![Linked List Insertions](../../assets/linked-list-insertions.jpg)
