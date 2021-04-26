@@ -70,6 +70,35 @@ class LinkedList {
     strRepr += `{ ${current.value} } -> NULL`;
     return strRepr;
   }
+
+  insertBefore(value, newVal) {
+    let node = new Node(newVal);
+    let current = this.head;
+
+    while(current.next.value !== value){
+      current = current.next;
+    }
+
+    node.next = current.next;
+    current.next = node;
+
+    return this;
+  }
+
+  insertAfter(value, newVal) {
+    let node = new Node(newVal);
+    let current = this.head;
+
+    while(current.value !== value){
+      current = current.next;
+    }
+
+    node.next = current.next;
+    current.next = node;
+
+    return this;
+  }
+
 }
 
 module.exports = LinkedList;

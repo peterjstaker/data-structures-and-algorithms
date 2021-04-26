@@ -9,7 +9,7 @@ describe('Linked List', () => {
     expect(list.head).toEqual(null);
   });
 
-  it('should add a note to the list', () => {
+  it('should append a node to the list', () => {
     let list = new LL();
     let first = 1;
     let second = 2;
@@ -35,7 +35,7 @@ describe('Linked List', () => {
     console.log(list);
   });
 
-  it('should return correct boolean value on includes method', () => {
+  it('should return correct boolean on includes method', () => {
     let list = new LL();
 
     expect(list.includes(13)).toEqual(false);
@@ -47,7 +47,7 @@ describe('Linked List', () => {
     expect(list.includes(1)).toEqual(false);
   });
 
-  it('should return the correct string representation of the linked list', () => {
+  it('should return the correct string representation of linked list', () => {
     let list = new LL();
     expect(list.toString()).toEqual('NULL');
 
@@ -57,6 +57,24 @@ describe('Linked List', () => {
     list.append(17);
     expect(list.toString()).toEqual('{ 7 } -> { 17 } -> NULL');
 
+  });
+
+  it('should return linked list with new node inserted before given value on insertBefore', () => {
+    let list = new LL();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.insertBefore(2, 9999);
+    expect(list.toString()).toEqual('{ 1 } -> { 9999 } -> { 2 } -> { 3 } -> NULL');
+  });
+
+  it('should return linked list with new node inserted after given value on insertAfter', () => {
+    let list = new LL();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.insertAfter(2, 9999);
+    expect(list.toString()).toEqual('{ 1 } -> { 2 } -> { 9999 } -> { 3 } -> NULL');
   });
 
 });
