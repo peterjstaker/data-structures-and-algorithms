@@ -4,11 +4,11 @@
 
 ## Challenge Description
 
-Implement a LinkedList with an insert method.
+Implement a LinkedList with an insert method, toString method and includes method.
 
 ## Approach & Efficiency
 
-I used the implementation we went over in class and added an insert method.
+I used the implementation we went over in class and added an insert method insert method, toString method and includes method.
 
 ## Solution
 

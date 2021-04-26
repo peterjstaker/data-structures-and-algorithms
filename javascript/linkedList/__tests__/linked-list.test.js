@@ -35,4 +35,28 @@ describe('Linked List', () => {
     console.log(list);
   });
 
+  it('should return correct boolean value on includes method', () => {
+    let list = new LL();
+
+    expect(list.includes(13)).toEqual(false);
+
+    list.insert(13);
+
+    expect(list.includes(13)).toEqual(true);
+    expect(list.includes(31)).toEqual(false);
+    expect(list.includes(1)).toEqual(false);
+  });
+
+  it('should return the correct string representation of the linked list', () => {
+    let list = new LL();
+    expect(list.toString()).toEqual('NULL');
+
+    list.append(7);
+    expect(list.toString()).toEqual('{ 7 } -> NULL');
+
+    list.append(17);
+    expect(list.toString()).toEqual('{ 7 } -> { 17 } -> NULL');
+
+  });
+
 });
