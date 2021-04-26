@@ -2,7 +2,7 @@
 
 ## Challenge Summary - Linked List
 
-[<--- Back to Table of Contents](../../../README.md)
+[<--- Back to Table of Contents](../../README.md)
 
 ### Challenge Description - LL Implementation
 
