@@ -11,3 +11,5 @@
 ### Linked List
 
 1. [Linked List Implementation](./javascript/linkedList/README.md)
+
+1. [Linked List Insertions](./javascript/linkedList/README.md)
