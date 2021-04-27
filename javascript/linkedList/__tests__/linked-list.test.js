@@ -1,5 +1,6 @@
 'use strict';
 
+const LinkedList = require('../linked-list.js');
 const LL = require('../linked-list.js');
 
 describe('Linked List', () => {
@@ -20,8 +21,6 @@ describe('Linked List', () => {
     list.append(second);
     list.append(3);
     list.append(4);
-
-    console.log(list);
   });
 
   it('should insert a node to the list', () => {
@@ -32,7 +31,6 @@ describe('Linked List', () => {
     list.append(first);
     list.insert(second);
     expect(list.head.value).toEqual(2);
-    console.log(list);
   });
 
   it('should return correct boolean on includes method', () => {
@@ -75,6 +73,50 @@ describe('Linked List', () => {
     list.append(3);
     list.insertAfter(2, 9999);
     expect(list.toString()).toEqual('{ 1 } -> { 2 } -> { 9999 } -> { 3 } -> NULL');
+  });
+
+  it('should throw an error when k is greater than length of linked list', () => {
+    let list = new LL();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    expect(() => list.kthFromEnd(4)).toThrow('k should be less than length of linked list');
+  });
+
+  it('should throw an error when k and the length of linked list are the same', () => {
+    let list = new LL();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    expect(() => list.kthFromEnd(3)).toThrow('k should be less than length of linked list');
+  });
+
+  it('should throw an error when k is not a positive integer', () => {
+    let list = new LL();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    expect(() => list.kthFromEnd(-3)).toThrow('k is not a positive integer');
+  });
+
+  it('should work for linked list with size of 1', () => {
+    let list = new LL();
+    list.append(1);
+    expect(() => list.kthFromEnd(1)).toThrow('k should be less than length of linked list');
+    expect(list.kthFromEnd(0)).toEqual(1);
+  });
+
+  it('should return kth value from end of linked list', () => {
+    let list = new LL();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.append(4);
+    list.append(5);
+    list.append(6);
+    list.append(7);
+    console.log(list.toString());
+    expect(list.kthFromEnd(3)).toEqual(4);
   });
 
 });

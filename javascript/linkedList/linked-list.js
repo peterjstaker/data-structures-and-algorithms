@@ -99,6 +99,30 @@ class LinkedList {
     return this;
   }
 
+  kthFromEnd(k) {
+    let length = 1;
+    let current = this.head;
+
+    while(current.next){
+      length += 1;
+      current = current.next;
+    }
+
+    if(k === 0){
+      return current.value;
+    } else if(k >= length){
+      throw new Error('k should be less than length of linked list');
+    } else if (k < 0) {
+      throw new Error('k is not a positive integer');
+    } else {
+      current = this.head;
+      for(let i = 1; i < length - k; i++){
+        current = current.next;
+      }
+      return current.value;
+    }
+  }
+
 }
 
 module.exports = LinkedList;

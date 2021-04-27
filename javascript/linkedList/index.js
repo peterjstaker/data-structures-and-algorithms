@@ -23,3 +23,13 @@ console.log('linked list', ll);
 ll.insertAfter(3, 72);
 
 console.log('linkedlist', ll);
+
+const string = ll.toString();
+
+console.log(string);
+
+const kthValue = ll.kthFromEnd(3);
+
+console.log('kth value', kthValue);
+
+
