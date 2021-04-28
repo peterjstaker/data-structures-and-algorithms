@@ -1,7 +1,7 @@
 'use strict';
 
-const LinkedList = require('../linked-list.js');
 const LL = require('../linked-list.js');
+const zipLists = require('../ll-zip/ll-zip.js');
 
 describe('Linked List', () => {
 
@@ -115,8 +115,41 @@ describe('Linked List', () => {
     list.append(5);
     list.append(6);
     list.append(7);
-    console.log(list.toString());
     expect(list.kthFromEnd(3)).toEqual(4);
+  });
+
+  it('should zip two linked lists of equal size', () => {
+    let list1 = new LL();
+    list1.append(1);
+    list1.append(2);
+    list1.append(3);
+    let list2 = new LL();
+    list2.append(9);
+    list2.append(8);
+    list2.append(7);
+    const zippedList = zipLists(list1, list2);
+    expect(zippedList.toString()).toEqual('{ 1 } -> { 9 } -> { 2 } -> { 8 } -> { 3 } -> { 7 } -> NULL');
+  });
+
+  it('should zip two linked lists of different size', () => {
+    let list1 = new LL();
+    list1.append(1);
+    list1.append(2);
+    list1.append(3);
+    let list2 = new LL();
+    list2.append(9);
+    list2.append(8);
+    const zippedList = zipLists(list1, list2);
+    expect(zippedList.toString()).toEqual('{ 1 } -> { 9 } -> { 2 } -> { 8 } -> { 3 } -> NULL');
+  });
+
+  it('should zip two linked lists of size 1', () => {
+    let list1 = new LL();
+    list1.append(1);
+    let list2 = new LL();
+    list2.append(9);
+    const zippedList = zipLists(list1, list2);
+    expect(zippedList.toString()).toEqual('{ 1 } -> { 9 } -> NULL');
   });
 
 });
