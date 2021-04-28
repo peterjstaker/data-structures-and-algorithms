@@ -1,6 +1,7 @@
 'use strict';
 
 const LinkedList = require('./linked-list.js');
+const zipLists = require('./ll-zip/ll-zip.js');
 
 const ll = new LinkedList();
 
@@ -31,5 +32,15 @@ console.log(string);
 const kthValue = ll.kthFromEnd(3);
 
 console.log('kth value', kthValue);
+
+const ll2 = new LinkedList();
+
+ll2.append(9);
+ll2.append(8);
+ll2.append(7);
+
+const zipped = zipLists(ll, ll2);
+
+console.log('zipped', zipped.toString());
 
 

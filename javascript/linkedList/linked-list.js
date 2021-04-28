@@ -15,7 +15,7 @@ class LinkedList {
       this.head = node;
     } else {
       // traversal happens here
-      let current = this.head; // start the traversal at the beginning (head) of ::
+      let current = this.head; // start the traversal at the beginning (head) of :
 
       while(current.next) { // this is the actual traversal
         // console.log(current);
@@ -123,6 +123,11 @@ class LinkedList {
     }
   }
 
+  // iterateLinkedListRecursively = function(node, largest=0) {
+  //   if(!node) {return largest; }
+  //   if(node.value > largest) {largest = node,value; }
+  //   return iterateLinkedListRecursively(node.next, largest);
+  // }
 }
 
 module.exports = LinkedList;
