@@ -13,3 +13,11 @@
 1. [Linked List Implementation](./javascript/linkedList/README.md)
 
 1. [Linked List Insertions](./javascript/linkedList/README.md)
+
+1. [Linked List Kth Value from the End](./javascript/linkedList/README.md)
+
+1. [Linked List Zip](./javascript/linkedList/ll-zip/README.md)
+
+### Stacks && Queues
+
+1. [Stacks && Queues Implementation](./javascript/stacksAndQueues/README.md)
