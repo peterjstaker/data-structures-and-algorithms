@@ -21,3 +21,5 @@
 ### Stacks && Queues
 
 1. [Stacks && Queues Implementation](./javascript/stacksAndQueues/README.md)
+
+1. [Queues with Stacks Implementation](./javascript/stacksAndQueues/queueWithStacks/README.md)
