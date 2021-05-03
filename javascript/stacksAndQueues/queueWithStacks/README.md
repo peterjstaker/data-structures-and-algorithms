@@ -1,4 +1,4 @@
-# Stacks and Queues
+# Queue with Stacks
 
 ## Challenge Summary - Queue with Stacks
 
