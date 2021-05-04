@@ -38,4 +38,4 @@ I reviewed the methods and properties of my queue implementation and then implem
 
 View Solution:
 
-* [AnimalShelter](./fifo-animal-shelter)
+* [AnimalShelter](./fifo-animal-shelter.js)
