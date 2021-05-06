@@ -23,3 +23,7 @@
 1. [Stacks && Queues Implementation](./javascript/stacksAndQueues/README.md)
 
 1. [Queues with Stacks Implementation](./javascript/stacksAndQueues/queueWithStacks/README.md)
+
+1. [Fifo Animal Shelter](./javascript/stacksAndQueues/fifoAnimalShelter/README.md)
+
+1. [Multi-bracket Validation](./javascript/stacksAndQueues/multiBracketValidation/README.md)
