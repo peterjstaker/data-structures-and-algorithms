@@ -27,3 +27,7 @@
 1. [Fifo Animal Shelter](./javascript/stacksAndQueues/fifoAnimalShelter/README.md)
 
 1. [Multi-bracket Validation](./javascript/stacksAndQueues/multiBracketValidation/README.md)
+
+### Trees
+
+1. [Binary Tree && Binary Search Tree Implementation](./javascript/code-challenges/tree/README.md)
