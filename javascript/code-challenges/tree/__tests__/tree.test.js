@@ -37,7 +37,7 @@ describe('binary search tree', () => {
   });
 
   it('can successfully return a collection from an inorder traversal', () => {
-    let expected = [ 1, 3, 6, 17, 19 ];
+    let expected = [1, 3, 6, 17, 19];
     let tree = new BinarySearchTree();
     tree.add(6);
     tree.add(3);
@@ -48,7 +48,7 @@ describe('binary search tree', () => {
   });
 
   it('can successfully return a collection from a postorder traversal', () => {
-    let expected = [ 1, 3, 17, 19, 6 ];
+    let expected = [1, 3, 17, 19, 6];
     let tree = new BinarySearchTree();
     tree.add(6);
     tree.add(3);
