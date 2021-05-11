@@ -15,7 +15,6 @@ function arrayBinarySearch(array, searchKey) {
   }
 
   while(idx === -1 && (max-min > 1)) {
-    console.log('inside loop');
     (max - min) % 2 === 0 ? middleIdx = (max - min) / 2 : middleIdx = (max - min - 1) / 2;
 
     if(array[min + middleIdx] === searchKey){

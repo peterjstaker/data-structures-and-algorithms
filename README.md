@@ -33,3 +33,6 @@
 1. [Binary Tree && Binary Search Tree Implementation](./javascript/code-challenges/tree/README.md)
 
 1. [Binary Tree Find Maximum Value](./javascript/code-challenges/tree/findMaxValue/README.md)
+
+1. [Binary Tree Find Maximum Value](./javascript/code-challenges/tree/breadthFirstTraversal/README.md)
+

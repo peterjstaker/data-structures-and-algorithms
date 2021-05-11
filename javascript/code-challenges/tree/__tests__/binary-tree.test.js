@@ -3,27 +3,6 @@
 const BinaryTree = require('../binary-tree');
 const Node = require('../node');
 
-
-let one = new Node(1);
-let two = new Node(2);
-let three = new Node(3);
-let four = new Node(4);
-let five = new Node(5);
-
-one.left = two;
-one.right = three;
-three.left = four;
-three.right = five;
-
-let tree = new BinaryTree();
-
-tree.root = one;
-
-
-console.log(tree.preOrder());
-console.log(tree.inOrder());
-console.log(tree.postOrder());
-
 describe('binary tree', () => {
   it('Can successfully instantiate an empty tree', () => {
     let tree = new BinaryTree();
@@ -116,6 +95,26 @@ describe('binary tree', () => {
     tree.root = one;
     let expected = 5;
     expect(tree.findMaximumValue()).toEqual(expected);
+  });
+
+  it('can successfully return a collection from a breadth first traversal', () => {
+    let one = new Node(1);
+    let two = new Node(2);
+    let three = new Node(3);
+    let four = new Node(4);
+    let five = new Node(5);
+
+    one.left = two;
+    one.right = three;
+    three.left = four;
+    three.right = five;
+
+    let tree = new BinaryTree();
+
+    tree.root = one;
+
+    let expected = [1, 2, 3, 4, 5];
+    expect(tree.breadthTraversal()).toEqual(expected);
   });
 
 });

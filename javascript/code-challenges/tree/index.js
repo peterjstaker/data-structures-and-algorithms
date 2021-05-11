@@ -24,6 +24,7 @@ BT.root = one;
 console.log(BT.preOrder());
 console.log(BT.inOrder());
 console.log(BT.postOrder());
+console.log(BT.breadthTraversal());
 
 let BST = new BinarySearchTree();
 
