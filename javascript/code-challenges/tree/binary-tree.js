@@ -1,5 +1,7 @@
 'use strict';
 
+const Queue = require('../../stacksAndQueues/queue');
+
 class BinaryTree {
   constructor() {
     this.root = null;
@@ -58,6 +60,22 @@ class BinaryTree {
 
     _walk(this.root);
     return max;
+  }
+
+  breadthTraversal() {
+    let results = [];
+    let queue = new Queue();
+
+    queue.enqueue(this.root);
+
+    while(!queue.isEmpty()){
+      let node = queue.dequeue();
+      if(node.left) queue.enqueue(node.left);
+      if(node.right) queue.enqueue(node.right);
+      results.push(node.value);
+    }
+
+    return results;
   }
 }
 
