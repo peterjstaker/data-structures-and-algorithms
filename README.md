@@ -34,5 +34,6 @@
 
 1. [Binary Tree Find Maximum Value](./javascript/code-challenges/tree/findMaxValue/README.md)
 
-1. [Binary Tree Find Maximum Value](./javascript/code-challenges/tree/breadthFirstTraversal/README.md)
+1. [Breadth First Traversal](./javascript/code-challenges/tree/breadthFirstTraversal/README.md)
 
+1. [Fizz Buzz Tree](./javascript/code-challenges/tree/fizzBuzzTree/README.md)
