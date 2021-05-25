@@ -37,3 +37,7 @@
 1. [Breadth First Traversal](./javascript/code-challenges/tree/breadthFirstTraversal/README.md)
 
 1. [Fizz Buzz Tree](./javascript/code-challenges/tree/fizzBuzzTree/README.md)
+
+### Sorting Algorithms
+
+1. [Insertion Sort](./javascript/code-challenges/insertion-sort/BLOG.md)
