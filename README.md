@@ -41,3 +41,5 @@
 ### Sorting Algorithms
 
 1. [Insertion Sort](./javascript/code-challenges/insertion-sort/BLOG.md)
+
+1. [Merge Sort](./javascript/code-challenges/merge-sort/BLOG.md)
