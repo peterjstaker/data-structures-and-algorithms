@@ -45,3 +45,7 @@
 1. [Merge Sort](./javascript/code-challenges/merge-sort/BLOG.md)
 
 1. [Quick Sort](./javascript/code-challenges/quick-sort/BLOG.md)
+
+### Hashtables
+
+1. [Hashtable Implementation](./javascript/code-challenges/hashtable/README.md)
