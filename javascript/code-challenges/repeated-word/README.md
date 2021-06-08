@@ -1,4 +1,4 @@
-# Linked Lists
+# Hashtables - Repeated Word
 
 ## Challenge Summary - Repeated Word
 

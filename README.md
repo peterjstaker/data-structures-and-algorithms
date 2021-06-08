@@ -51,3 +51,5 @@
 1. [Hashtable Implementation](./javascript/code-challenges/hashtable/README.md)
 
 1. [First Repeated Word](./javascript/code-challenges/repeated-word/README.md)
+
+1. [Left Join](./javascript/code-challenges/left-join/README.md)
