@@ -78,7 +78,7 @@ class Hashmap {
         if(current.val[0] === key) return true;
       }
 
-      if(current.next.val[0] === key) return true;
+      if(current.next && current.next.val[0] === key) return true;
     }
     return false;
   }
